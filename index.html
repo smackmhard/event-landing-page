@@ -1,145 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/styles.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
-    <title>daily challenge day 6</title>
+  <title>daily challenge day 6</title>
 </head>
 
 <body>
   <div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-tabs">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Speaker</a>
+              <a class="nav-link active" aria-current="page" href="#speakers">
+                Speakers
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"  href="#">Tickets</a>
+              <a class="nav-link" href="#get-ticket">Tickets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page"  href="#">Venue</a>
+              <a class="nav-link" href="#venue">Venue</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>  
-  </div>
+    </nav>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-12">  
-            <div class="hero-image p-5 mb-2 bg-info text-dark text-center">
-             <h1>Bitwise Industries  Grand Opening Toledo Ohio</h1>
-             <p>Come out and join us for the event</p>
-             <button>Get Tickets</button>
-            </div>
-          </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 hero-image p-3 mb-3 bg-info text-dark text-center">
+            <h1>Bitwise Industries Grand Opening Toledo Ohio</h1>
+            <p>Come out and join us for the event</p>
+            <button>Get Tickets</button>
         </div>
+      </div>
     </div>
 
     <div class="container border border-3">
-        <div class="row">
-          <div class="col-12 bg-primary p-3 mb-4 text-dark text-center">
-               <h1> The Speakers</h1>       
-               <p>Write a few lines about the event speakers to highlight their expertise</p> 
-          </div>
+      <div class="row">
+        <div class="col-12 bg-primary p-3 mb-4 text-dark text-center">
+          <h1 id="speakers">The Speakers</h1>
+          <p>Write a few lines about the event speakers to highlight their expertise</p>
+        </div>
 
-          <div class="col-3 d-flex">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <img src="https://bitwiseindustries.com/wp-content/uploads/2021/02/Headshot_IrmaOlguinJr_X3-838x1024.jpg" class="card-img-top" alt="Pic of Irma Olguin Jr.">
-                <h5 class="card-title">Irma Olguin Jr.</h5>
-                <h6 class="card-subtitle mb-2 text-muted">CEO & CO-FOUNDER</h6>
-                <p class="card-text">Her goal is to ensure Bitwise always remains faithful to its mission of strengthening the tech industry and turning it into a driver of real economic progress by upskilling disenfranchised humans, we help empower them to change their own lives, which ignites and transforms the economies of each city Bitwise serves.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="https://bitwiseindustries.com/about/team/" class="card-link">We are Bitwise</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-3 d-flex">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <img src="https://bitwiseindustries.com/wp-content/uploads/2021/09/stephanie_moreno.jpg" class="card-img-top" alt="Pic of Stephanie Moreno">
-                <h5 class="card-title">Stephanie Moreno</h5>
-                <h6 class="card-subtitle mb-2 text-muted">VP, APPRENTICESHIPS</h6>
-                <p class="card-text">As the Vice President of Apprenticeships, Stephanie Moreno leads the effort to holistically support each and every student in our apprenticeship program. As individuals navigate through all phases of the apprenticeship journey, she leads a team that connects each one with the resources and support they need to succeed. Stephanie’s goal is to ensure each person truly feels that “No one belongs here more than you.”</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-3 d-flex">          
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <img src="https://bitwiseindustries.com/wp-content/uploads/2021/05/Media-1-e1620685523423.jpg" class="card-img-top" alt="pic of Tammi Sherman">
-                <h5 class="card-title">Tammi Sherman</h5>
-                <h6 class="card-subtitle mb-2 text-muted">VP, TOLEDO</h6>
-                <p class="card-text">As the new VP of Bitwise Toledo, Tammi will be collaborating with key partners such as local government offices, corporations, foundations, and academic institutions to educate, build, and grow Toledo communities that are underserved and underrepresented.</p>
-                <a href="" class="card-link">Card link</a>
-                <a href="https://bitwiseindustries.com/about/team/" class="card-link">We are Bitwise</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3 d-flex">          
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <img src="https://ca.slack-edge.com/T039Z04V3-U032UHGL66B-4535b8565656-512" class="card-img-top" alt="Pic of Michael Vanderpool">
-                <h5 class="card-title">Michael Vanderpool</h5>
-                <h6 class="card-subtitle mb-2 text-muted">BITWISE INSTRUCTOR</h6>
-                <p class="card-text">Our curriculum doesn’t come from textbooks, it comes directly from practicing industry experts like Michael. Our system of teaching is hands-on and up-to-date with current practices.  Michael teaches Websites for Beginners, Moblile-Friendly Websites, Javscript for Beginners and React.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
+        <div class="col-3 d-flex">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://bitwiseindustries.com/wp-content/uploads/2021/02/Headshot_IrmaOlguinJr_X3-838x1024.jpg"
+                class="card-img-top" alt="Pic of Irma Olguin Jr.">
+              <h5 class="card-title">Irma Olguin Jr.</h5>
+              <h6 class="card-subtitle mb-2 text-muted">CEO & CO-FOUNDER</h6>
+              <p class="card-text">Her goal is to ensure Bitwise always remains faithful to its mission of strengthening
+                the tech industry and turning it into a driver of real economic progress by upskilling disenfranchised
+                humans, we help empower them to change their own lives, which ignites and transforms the economies of
+                each city Bitwise serves.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="https://bitwiseindustries.com/about/team/" class="card-link">We are Bitwise</a>
             </div>
           </div>
         </div>
-    </div>    
-    
-      <div class="container border border-3">
-          <div class="row">
-            <div class="col-12 bg-warning text-dark text-center mb-2">
-                <h1>Get your ticket today</h1>
-                <p>Each ticket includes: </p>
-                <button>Buy ticket</button>
+
+        <div class="col-3 d-flex">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://bitwiseindustries.com/wp-content/uploads/2021/09/stephanie_moreno.jpg"
+                class="card-img-top" alt="Pic of Stephanie Moreno">
+              <h5 class="card-title">Stephanie Moreno</h5>
+              <h6 class="card-subtitle mb-2 text-muted">VP, APPRENTICESHIPS</h6>
+              <p class="card-text">As the Vice President of Apprenticeships, Stephanie Moreno leads the effort to
+                holistically support each and every student in our apprenticeship program. As individuals navigate
+                through all phases of the apprenticeship journey, she leads a team that connects each one with the
+                resources and support they need to succeed. Stephanie’s goal is to ensure each person truly feels that
+                “No one belongs here more than you.”</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
-      </div>    
-
-      <div class="container border border-3">
-        <div class="row">
-          <div class="col-6 bg-secondary text-white mb-2">
-               <h1>The venue</h1>
-               <p>Our event will be held at the new Toledo, Ohio facilities: 1300 Jefferson Ave, Toledo, OH 43604</p> 
-              
-               <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.040994309437!2d-83.54610644988706!3d41.65485627913855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b86d3f0b032d7%3A0xc98aa37c3827d329!2s1300%20Jefferson%20Ave%2C%20Toledo%2C%20OH%2043604!5e0!3m2!1sen!2sus!4v1658280995999!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" </iframe>
-               </div>
-          </div>
-
-          <div class="col-6 mb-2">
-            <br>
-            <img src="https://bitwiseindustries.com/wp-content/uploads/2021/02/7ZJPJYJA4JAYDMNJJNIVGJCUCQ-1024x576.jpg" width="100%" height="75%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </div>
-
         </div>
-     </div>
-  
+
+        <div class="col-3 d-flex">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://bitwiseindustries.com/wp-content/uploads/2021/05/Media-1-e1620685523423.jpg"
+                class="card-img-top" alt="pic of Tammi Sherman">
+              <h5 class="card-title">Tammi Sherman</h5>
+              <h6 class="card-subtitle mb-2 text-muted">VP, TOLEDO</h6>
+              <p class="card-text">As the new VP of Bitwise Toledo, Tammi will be collaborating with key partners such
+                as local government offices, corporations, foundations, and academic institutions to educate, build, and
+                grow Toledo communities that are underserved and underrepresented.</p>
+              <a href="" class="card-link">Card link</a>
+              <a href="https://bitwiseindustries.com/about/team/" class="card-link">We are Bitwise</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 d-flex">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://ca.slack-edge.com/T039Z04V3-U032UHGL66B-4535b8565656-512" class="card-img-top"
+                alt="Pic of Michael Vanderpool">
+              <h5 class="card-title">Michael Vanderpool</h5>
+              <h6 class="card-subtitle mb-2 text-muted">BITWISE INSTRUCTOR</h6>
+              <p class="card-text">Our curriculum doesn’t come from textbooks, it comes directly from practicing
+                industry experts like Michael. Our system of teaching is hands-on and up-to-date with current practices.
+                Michael teaches Websites for Beginners, Moblile-Friendly Websites, Javscript for Beginners and React.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container border border-3">
+      <div class="row">
+        <div class="col-12 bg-warning text-dark text-center mb-2">
+          <h1 id="get-ticket">Get your ticket today</h1>
+          <p>Each ticket includes: </p>
+          <button>Buy ticket</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container border border-3">
+      <div class="row">
+        <div class="col-6 bg-secondary text-white mb-2">
+          <h1 id="venue">The Venue</h1>
+          <p>Our event will be held at the new Toledo, Ohio facilities: 1300 Jefferson Ave, Toledo, OH 43604</p>
+
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.040994309437!2d-83.54610644988706!3d41.65485627913855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b86d3f0b032d7%3A0xc98aa37c3827d329!2s1300%20Jefferson%20Ave%2C%20Toledo%2C%20OH%2043604!5e0!3m2!1sen!2sus!4v1658280995999!5m2!1sen!2sus"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>" </iframe>
+          </div>
+        </div>
+
+        <div class="col-6 mb-2">
+          <br>
+          <img src="https://bitwiseindustries.com/wp-content/uploads/2021/02/7ZJPJYJA4JAYDMNJJNIVGJCUCQ-1024x576.jpg"
+            width="100%" height="75%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
